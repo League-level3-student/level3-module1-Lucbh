@@ -2,11 +2,15 @@ package _05_String_Integer_Pair;
 
 public class StringIntegerPair {
 	//1. create a private array of Strings called keys. Don't initialize it.
-
+private String[] keys;
 	//2. create a private array of integers called values.
-	
+private int[] values;
+
 	StringIntegerPair(){
 		//3. initialize both member arrays to a length of 0
+		
+		keys = new String[0];
+		values = new int[0];
 	}
 	
 	// 4. Complete the steps in the put method
@@ -16,9 +20,9 @@ public class StringIntegerPair {
 		//   passed in value and return from the method.
 		
 		//B. create a String array that is one element longer than the keys
-		
+		String[] fire = new String[keys.length + 1];
 		//C. create an integer array that is one element longer than values
-		
+		int[] water = new int[values.length + 1];
 		//D. set the last element of the new String array to the passed in key
 		
 		//E. set the last element of the new int array to the passed in value
