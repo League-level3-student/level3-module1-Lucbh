@@ -2,6 +2,8 @@ package _01_IntroToArrayLists;
 
 import java.util.ArrayList;
 
+import javax.rmi.CORBA.Stub;
+
 /**
  * Copyright The League of Amazing Programmers 2013-2017 Level 3 Two ArrayList
  * Cleaning Exercises Duration=.00 Platform=Eclipse Type=Recipe Objectives=
@@ -14,6 +16,7 @@ public class _04_RemovingStuffFromArrayLists {
 		class Stuff {
 			public String type;
 		}
+		
 		class Worm extends Stuff {
 			public Worm() {
 				type = "worm";
@@ -35,8 +38,13 @@ public class _04_RemovingStuffFromArrayLists {
 		System.out.println(stuffIFoundInTheYard.size());
 
 		/* TODO 1: Clean out the dirt but keep the delicious worms. */
-		
-		
+
+		//for (int i = 0; i < stuffIFoundInTheYard.size();i++) {
+			//
+			//if (studdIFoundInTheYard == Worm())
+			//stuffIFoundInTheYard.remove(i);
+			//
+		//}
 		
 		
 		System.out.println(stuffIFoundInTheYard.size()); // should be 2

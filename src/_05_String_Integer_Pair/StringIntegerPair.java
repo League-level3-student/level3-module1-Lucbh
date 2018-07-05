@@ -24,11 +24,11 @@ private int[] values;
 		//C. create an integer array that is one element longer than values
 		int[] water = new int[values.length + 1];
 		//D. set the last element of the new String array to the passed in key
-		
+		fire[fire.length-1] = key;
 		//E. set the last element of the new int array to the passed in value
-		
+		water[water.length-1] = value;	
 		//F. iterate through the keys and values and copy the elements to the new arrays
-		
+		for (int i = 0; i <)
 		//G. Set the keys and values arrays equal to the new arrays created in steps B and C.
 	}
 	
