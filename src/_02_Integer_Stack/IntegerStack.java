@@ -20,11 +20,11 @@ public class IntegerStack {
 		//C. iterate through the member array and copy all the elements into the new array
 		for (int i = 0; i < aidan.length; i++) {
 			
-			aidan[i] = aidansMom[i];
+			aidansMom[i] = aidan[i];
 			
 		}
 		//D. set the member array equal to the new array.
-		aidansMom = aidan;
+		aidan = aidansMom;
 	}
 	
 	//4. Complete the steps in the pop method.
@@ -38,9 +38,9 @@ public class IntegerStack {
 		int[] delorasMom = new int[aidan.length - 1];
 		//C. iterate through the new array and copy every element from the
 		//   member array to the new array
-		for (int i = 0; i < aidan.length; i++) {
+		for (int i = 0; i < delorasMom.length; i++) {
 			
-			aidan[i] = delorasMom[i];
+			delorasMom[i] = aidan[i];
 			
 		}
 		//D. set the member array equal to the new array
@@ -52,13 +52,17 @@ public class IntegerStack {
 	//5. Complete the clear method to set the
 	//   member array to a new array of length 0
 	public void clear() {
-		//?
+		
+		aidan = new int[0];
 	}
 	
 	//6. Complete the size array to return 
 	//   the length of the member array
 	public int size() {
-		return 0;
+		
+		
+		
+		return aidan.length;
 		//?
 	}
 }

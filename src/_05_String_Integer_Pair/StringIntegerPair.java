@@ -28,7 +28,7 @@ private int[] values;
 		//E. set the last element of the new int array to the passed in value
 		water[water.length-1] = value;	
 		//F. iterate through the keys and values and copy the elements to the new arrays
-		for (int i = 0; i <)
+					//for (int i = 0; i <)
 		//G. Set the keys and values arrays equal to the new arrays created in steps B and C.
 	}
 	

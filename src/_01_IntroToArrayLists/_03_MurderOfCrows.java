@@ -36,7 +36,19 @@ public class _03_MurderOfCrows {
     	
     	for (int i = 0; i < theMurder.size(); i++) {
     		
+    		Crow c = theMurder.get(i);
     		
+    		
+    		for (int o = 0; o < c.getStomachContents().size();o++) {
+    			
+    			if (c.getStomachContents().get(o) == "diamond") {
+    				
+    				System.out.println(c.getName());
+    				System.out.println(i + " crows had to die sucka.");
+    			}
+    			
+    		}
+    			
     		
     	}
     	

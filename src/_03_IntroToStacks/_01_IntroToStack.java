@@ -17,7 +17,7 @@ public class _01_IntroToStack {
 		Random ran = new Random();
 		
 		for (int x = 0; x < 100; x++) {
-				double r =  ran.nextDouble();
+				double r =  ran.nextDouble()*100;
 				oof.push(r);	
 		}
 	

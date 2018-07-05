@@ -30,20 +30,21 @@ private int[] fire;
 		
 		for (int i = 0; i < fire.length; i++) {
 			
-			fire[i] = water[i];
+			water[i] = fire[i];
 			
 		}
 		
 		//D. set the member array equal to the new array.
 		
-		water = fire;
+		fire = water;
 	}
 	
 	//4. Complete the steps in the add method
 	public int get(int location) {
 		//A. Return the value of the member array at the location passed in
+		
 		//????
-		return 0;
+		return fire[location];
 	}
 	
 	//5. Run the DynamicArrayTest to see if you are correct so far.
@@ -54,7 +55,7 @@ private int[] fire;
 		//A. set the variable at the location passed in to the method
 		//   to the new value v
 		
-		//location = v; ????
+		fire[location] = v;
 	}
 	
 	//7. Complete the steps in the insert method
@@ -75,7 +76,7 @@ for (int i = 0; i < earth.length; i++) {
 			}
 			//D. else if i is greater than location:
 		    //		set the element at i of the new array to the i - 1 element of the member array
-			if ( i > location) {
+			else if ( i > location) {
 				earth[i] = fire[i-1];
 			}
 			
@@ -127,15 +128,23 @@ for (int i = 0; i < earth.length; i++) {
 	
 	//11. Complete the size method so that it returns the length of the member array.
 	public int size() {
-		return 0;
 		
-		//?
+		
+		return fire.length;
+		
+		
 	}
 	
 	//12. Complete the clear array so that it sets the member array 
 	//    equal to a new integer array of size 0
 	public void clear() {
+		
+		fire = new int[0];
+		
+		
 	}
-	//?
+	
+	
+	
 	//13. Run the test again to see if you are finished.
 }
