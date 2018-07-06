@@ -9,6 +9,7 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 
 public class Utilities {
+	
 	public static String readRandomLineFromFile(String filename) {
 		String word = "";
 
