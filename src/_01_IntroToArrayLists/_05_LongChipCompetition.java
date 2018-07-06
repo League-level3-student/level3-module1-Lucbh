@@ -19,17 +19,19 @@ public class _05_LongChipCompetition {
 		
 		lcc.initializeBeatles();
 		
-		for (int i = 0; i < lcc.theBeatles.size(); i++) {
+		for (int i = 0; i < lcc.theBeatles.size();i++) {
 			
 			Beatle b = lcc.theBeatles.get(i);
-			
-			//for (int x = 0; x < getTheBand.size();x++) {
-				
-			//}
+		
+	
+		
+		
+		
+		
+		
 			
 			
 		}
-		
 		
 	}
 	

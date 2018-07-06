@@ -12,7 +12,6 @@ public class Utilities {
 	
 	public static String readRandomLineFromFile(String filename) {
 		String word = "";
-
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(filename));
 			int randomNumber = new Random().nextInt(getTotalWordsInFile(filename));
