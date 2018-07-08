@@ -52,6 +52,7 @@ public class HangMan implements KeyListener {
 		
 		d = new JPanel();
 
+		
 		c.add(d);
 
 	}
@@ -125,6 +126,8 @@ public class HangMan implements KeyListener {
 		
 		
 		if (!s.contains("_") && lives > 0) {
+			
+		
 			
 			System.out.println("WIN");
 			int choose = JOptionPane.showOptionDialog(null, "Do you want to play again?", "YOU WIN!", JOptionPane.YES_NO_OPTION,  JOptionPane.QUESTION_MESSAGE, null, new String[] {"Yes","No"}, null);
