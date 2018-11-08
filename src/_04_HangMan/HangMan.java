@@ -78,7 +78,7 @@ public class HangMan implements KeyListener {
 
 	public void start() {
 
-		// numbs = JOptionPane.showInputDialog("Enter a number");
+		//numbs = JOptionPane.showInputDialog("Enter a number");
 
 	}
 
@@ -90,6 +90,8 @@ public class HangMan implements KeyListener {
 
 	@Override
 	public void keyPressed(KeyEvent e) {
+		
+		life.setText("" + lives--);
 
 		char ohlala = e.getKeyChar();
 
@@ -98,10 +100,14 @@ public class HangMan implements KeyListener {
 		for (int i = 0; i < word.length() * 2; i += 2) {
 
 			if (word.charAt(i / 2) == ohlala) {
+				
+				
 
 				s = s.substring(0, i) + e.getKeyChar() + s.substring(i + 1, s.length());
 				man.setText(" " + s + "      Lives Left:");
-
+				
+				life.setText("" + lives++);
+				
 			}
 
 		}
@@ -130,7 +136,8 @@ public class HangMan implements KeyListener {
 		}
 
 		if (lives == 0) {
-
+			
+			
 			int i = JOptionPane.showConfirmDialog(null,
 					"You lose! The word was " + word + ".\n Do you want to play again?");
 
@@ -151,9 +158,15 @@ public class HangMan implements KeyListener {
 
 		}
 
-		life.setText("" + lives--);
+	
 
-	}
+		
+		
+		}
+		
+		
+		
+	
 
 	@Override
 	public void keyReleased(KeyEvent e) {

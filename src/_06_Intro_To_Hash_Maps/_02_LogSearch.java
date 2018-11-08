@@ -28,7 +28,7 @@ public class _02_LogSearch {
 
 		c.add(d);
 
-		HashMap<Integer, String> dog = new HashMap<Integer, String>();
+		//HashMap<Integer, String> dog = new HashMap<Integer, String>();
 
 	}
 	/*
