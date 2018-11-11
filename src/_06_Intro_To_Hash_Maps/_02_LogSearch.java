@@ -17,16 +17,7 @@ public class _02_LogSearch {
 
 	public static void main(String[] args) {
 
-		c = new JFrame();
-
-		c.setVisible(true);
-		c.setSize(300, 100);
-
-		c.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-		d = new JPanel();
-
-		c.add(d);
+	
 
 		//HashMap<Integer, String> dog = new HashMap<Integer, String>();
 
