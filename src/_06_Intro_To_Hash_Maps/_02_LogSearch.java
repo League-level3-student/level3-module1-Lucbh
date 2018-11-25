@@ -7,6 +7,7 @@ import java.util.HashMap;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class _02_LogSearch implements ActionListener{
@@ -17,11 +18,18 @@ JButton button1;
 JButton button2;
 JButton button3;
 
+
+HashMap<Integer, String> dog = new HashMap<Integer, String>();
+
+
 	public static void main(String[] args) {
 
 	
 new _02_LogSearch().createUI();
-	
+
+
+
+
 
 	}
 	/*
@@ -53,12 +61,24 @@ new _02_LogSearch().createUI();
 	 
 	 frame = new JFrame();
 	 panel = new JPanel();
-	 button1 = new JButton();
-	 button2 = new JButton();
-	 button3 = new JButton();
-	 frame.add(panel);
+	 button1 = new JButton("Add Entry");
+	 button2 = new JButton("Search by ID");
+	 button3 = new JButton("View List");
 	 
-		
+	 frame.add(panel);
+	 panel.add(button1);
+	 panel.add(button2);
+	 panel.add(button3);
+	 
+	 button1.addActionListener(this);
+	 button2.addActionListener(this);
+	 button3.addActionListener(this);
+
+	 
+	 frame.setSize(500, 500);
+	 frame.setVisible(true);
+	 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	 frame.pack();
 	}
 
 @Override
@@ -66,6 +86,39 @@ public void actionPerformed(ActionEvent e) {
 	// TODO Auto-generated method stub
 	if (e.getSource() == button1) {
 		
+		String a = JOptionPane.showInputDialog("Enter an ID number");
+		int c = Integer.parseInt(a);
+		String b = JOptionPane.showInputDialog("Enter a name");
+
+		dog.put(c,b);
+		
+	
+		
+	}
+	
+	if (e.getSource() == button2) {
+	
+	String fire = JOptionPane.showInputDialog("Enter the ID number");
+	int water = Integer.parseInt(fire);
+	
+	System.out.println(dog.get(water));
+}
+	
+	if (e.getSource() == button3) {
+		
+	
+	
+		
+
+		
+		for(Integer i : dog.keySet()){
+				String cat = ("Id:" + i + " Name:" + dog.get(i));
+				System.out.println(cat);
+		}
+		
+		
+		
+		//JOptionPane.showMessageDialog(null,cat);
 	}
 }
 
